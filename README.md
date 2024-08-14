@@ -9,4 +9,6 @@
 
 Executable file and shared library are in the bin folder
 
+Generator: Visual Studio 17 2022
+
 The project was reset on Windows
