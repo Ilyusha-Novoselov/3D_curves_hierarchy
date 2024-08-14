@@ -8,3 +8,5 @@
 * cmake --build .
 
 Executable file and shared library are in the bin folder
+
+The project was reset on Windows
