@@ -3,7 +3,12 @@
 
 #include <cmath>
 
-#include "directive.h"
+#if defined(_WIN32) || defined(_WIN64)
+    #include "directive.h"
+#else
+    #define CURVES_DLL_API
+#endif
+
 #include "point.h"
 
 namespace Curves {

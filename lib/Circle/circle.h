@@ -1,7 +1,12 @@
 #ifndef CIRCLE_H_
 #define CIRCLE_H_
 
-#include "directive.h"
+#if defined(_WIN32) || defined(_WIN64)
+    #include "directive.h"
+#else
+    #define CURVES_DLL_API
+#endif
+
 #include "curve.h"
 
 namespace Curves {

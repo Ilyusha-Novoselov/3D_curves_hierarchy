@@ -4,6 +4,10 @@ project(3D_curves_hierarchy)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+if (UNIX)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+endif()
+
 find_package(OpenMP REQUIRED)
 
 add_subdirectory(lib)

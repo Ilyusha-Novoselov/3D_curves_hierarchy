@@ -26,4 +26,6 @@ target_include_directories(curves_lib PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/Directives"
 )
 
-target_compile_definitions(curves_lib PUBLIC CURVES_DLL_EXPORT)
+if (WIN32)
+    target_compile_definitions(curves_lib PUBLIC CURVES_DLL_EXPORT)
+endif()
